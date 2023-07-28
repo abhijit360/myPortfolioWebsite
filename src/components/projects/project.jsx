@@ -8,6 +8,18 @@ import "./styles/project.css";
 const Project = (props) => {
 	const { logo, title, description, linkText, link } = props;
 
+	let linkedIcon = [];
+	if (link.length !== 0) {
+		linkedIcon.push(
+			<div className="project-link">
+				<div className="project-link-icon">
+					<FontAwesomeIcon icon={faLink} />
+				</div>
+				<div className="project-link-text">{linkText}</div>
+			</div>
+		);
+	}
+
 	return (
 		<React.Fragment>
 			<div className="project">
@@ -18,13 +30,7 @@ const Project = (props) => {
 						</div>
 						<div className="project-title">{title}</div>
 						<div className="project-description">{description}</div>
-						<div className="project-link">
-							<div className="project-link-icon">
-								<FontAwesomeIcon icon={faLink} />
-							</div>
-
-							<div className="project-link-text">{linkText}</div>
-						</div>
+						{linkedIcon}
 					</div>
 				</Link>
 			</div>

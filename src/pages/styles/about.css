@@ -69,6 +69,15 @@
 	display: none;
 }
 
+.about-works {
+	flex-basis: 600px;
+	padding-top: 30px;
+}
+
+.about-works-mobile{
+	display:none;
+}
+
 @media (max-width: 1024px) {
 	.about-logo {
 		z-index: 100;
@@ -103,6 +112,13 @@
 	.about-socials-mobile {
 		padding-top: 30px;
 		display: flex;
+	}
+	.about-works{
+		display:none;
+	}
+	.about-works-mobile{
+		padding-top: 30px;
+		display:flex;
 	}
 }
 

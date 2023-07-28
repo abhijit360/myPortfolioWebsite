@@ -1,8 +1,11 @@
+
+// import FigmaLogo from "../../public/FigmaLogo.png"
+
 const INFO = {
 	main: {
-		title: "Reactfolio by truethari",
-		name: "Tharindu N.",
-		email: "mail@tharindu.dev",
+		title: "Abhijit's Website",
+		name: "Abhijit Ajit Kamath",
+		email: "kamathabhijit2002@gmail.com",
 		logo: "../logo.png",
 	},
 
@@ -16,15 +19,15 @@ const INFO = {
 	},
 
 	homepage: {
-		title: "Full-stack web and mobile app developer, and amateur astronaut.",
+		title: "Software Engineer, designer, tech enthusiast",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.",
+			"I am a budding software engineer who is pursuing a Honors Computer Science and Mathematics double major at the University of Massachusetts Amherst. I am exploring full stack development and I also have keen interest in Machine learning, finance, and designing",
 	},
 
 	about: {
-		title: "I’m Tharindu N. I live in Sri Lanka, where I design the future.",
+		title: "I’m Abhijit Ajit Kamath. Building my dreams from Amherst, Ma.",
 		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.",
+			"I began programming about a year ago. I am a passionate problem solver and love taking on a challenge. I am currenlty exploring web and mobile development",
 	},
 
 	articles: {
@@ -35,48 +38,56 @@ const INFO = {
 
 	projects: [
 		{
-			title: "Project 1",
+			title: "Login/Registration CRUD Application | Django, React",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+				"Built a CRUD page with JWT authentication using Python and Javascript.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/abhijit360/Login-Registration-API-Backend",
 		},
 
 		{
-			title: "Project 2",
+			title: "Data Retrieval API with MySQL Database | Django, SQL",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+				"Built an GET/POST API and wrote raw SQL queries to integrate into a MySQL database",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/abhijit360/API-SQL",
 		},
 
 		{
-			title: "Project 3",
+			title: "TurtleSplash | python",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
+				"Wrote a game using the pygame library in python.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/abhijit360/TurtleSplash",
 		},
 
 		{
-			title: "Project 4",
+			title: "Food Delivery React Page | React.js, CSS",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+				"I built an interactive page in React.js and added my custom styling in css as part of an Udemy Course",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/abhijit360/React-Food-DeliveryApp",
 		},
 
 		{
-			title: "Project 5",
+			title: "Kinsei",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
+				"Designed a website for a NFT minting service",
+			logo: "./FigmaLogo.png",
+			linkText: "",
+			link: "",
+		},
+		{
+			title: "Hitch",
+			description:
+				"Designed the UI for a ride sharing application.",
+			logo: "./FigmaLogo.png",
+			linkText: "",
+			link: "",
 		},
 	],
 };
