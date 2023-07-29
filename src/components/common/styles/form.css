@@ -1,0 +1,97 @@
+.contactForm{
+    display: flex;
+    flex-direction:column;
+    gap: 0.6rem;
+    width: 100%;
+}
+
+.contactForm-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+    margin-top: 0.4rem;
+    padding: 1.5rem 0rem;
+    border-top: 2px solid black;
+
+}
+
+.formSubmissionMessage{
+    width: 5rem;
+    color:red;
+    font-weight: bolder;
+    padding: 0em  1rem;
+    margin-bottom: 0.5rem;
+    
+}
+
+
+.contactForm-label{
+    font-weight: bolder;
+}
+
+.contactForm-inputField{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+}
+
+.contactForm-error{
+    color: rgb(255, 0, 0);
+    font-weight:bolder;
+    font-size: 0.8rem;
+}
+
+.contactForm-error::before{
+    content: "*"
+}
+
+
+/* --primary-color: #27272a;
+	--secondary-color: #65656d;
+	--tertiary-color: #acacb4;
+	--quaternary-color: #e4e4e7;
+	--link-color: #14b8a6; */
+
+.contactForm-btn{
+    background: #acacb4;
+    border: none;
+    border-radius: 1.5rem;
+    width: 6.5rem;
+    padding: 0.4rem 0rem;
+    align-self: center;
+}
+
+
+.contactForm-btn:hover{
+    color:#14b8a6;
+    background-color: #27272a;
+    cursor: pointer;
+}
+
+
+@media (min-width: 450px) {
+    .contactForm{
+        width: 75%;
+        margin: 0rem 1rem;
+    }
+
+    .contactform-label{
+        font-weight:500;
+    }
+    .contactForm-input-message{
+        width: 300px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 1000px){
+    .contactForm{
+        width: 50%;
+    }
+
+    .contactForm-input-message{
+        width: 300px;
+        height: 100px;
+    }
+}

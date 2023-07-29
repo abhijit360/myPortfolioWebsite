@@ -1,4 +1,3 @@
-
 // import FigmaLogo from "../../public/FigmaLogo.png"
 
 const INFO = {
@@ -11,11 +10,12 @@ const INFO = {
 
 	socials: {
 		twitter: "https://twitter.com/",
-		github: "https://github.com/",
-		linkedin: "https://linkedin.com/",
+		github: "https://github.com/abhijit360",
+		linkedin: "https://www.linkedin.com/in/abhijit-kamath-227b63245/",
 		instagram: "https://instagram.com/",
 		stackoverflow: "https://stackoverflow.com/",
 		facebook: "https://facebook.com/",
+		discord: "AAK#1098",
 	},
 
 	homepage: {
@@ -31,9 +31,9 @@ const INFO = {
 	},
 
 	articles: {
-		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
+		title: "I am passionate about connecting with people and seeking avenues for collaborative growth.",
 		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
+			"Here are a couple of Groups and projects that I am passionate about.",
 	},
 
 	projects: [
@@ -57,8 +57,7 @@ const INFO = {
 
 		{
 			title: "TurtleSplash | python",
-			description:
-				"Wrote a game using the pygame library in python.",
+			description: "Wrote a game using the pygame library in python.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
 			linkText: "View Project",
 			link: "https://github.com/abhijit360/TurtleSplash",
@@ -74,17 +73,15 @@ const INFO = {
 		},
 
 		{
-			title: "Kinsei",
-			description:
-				"Designed a website for a NFT minting service",
+			title: "Hitch",
+			description: "Designed the UI for a ride sharing application.",
 			logo: "./FigmaLogo.png",
-			linkText: "",
-			link: "",
+			linkText: "Read more about my work",
+			link: "/Involvements",
 		},
 		{
-			title: "Hitch",
-			description:
-				"Designed the UI for a ride sharing application.",
+			title: "Kinsei",
+			description: "Designed a website for a NFT minting service",
 			logo: "./FigmaLogo.png",
 			linkText: "",
 			link: "",
