@@ -45,6 +45,14 @@ const INFO = {
 			linkText: "View Project",
 			link: "https://github.com/abhijit360/Login-Registration-API-Backend",
 		},
+		{
+			title: "Data Retrieval, Analysis, visualisation | Python, BeautifulSoup4, Pandas, Seaborn and Matplotlib ",
+			description:
+				"Webscraped and cleaned data and formatted it into a CSV file. Visualised the data using seaborn and Matplotlib",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+			linkText: "View Project",
+			link: "https://github.com/abhijit360/Login-Registration-API-Backend",
+		},
 
 		{
 			title: "Data Retrieval API with MySQL Database | Django, SQL",
