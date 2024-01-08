@@ -38,6 +38,35 @@ const INFO = {
 
 	projects: [
 		{
+		title: "Amherst Education Foundation Website | NextJs, ExpressJS, AWS, MongoDB Dec 2023 - Present",
+		description:
+			"• Developed a REST API with Express to facilitate image storage in an AWS S3 Bucket, manage static website content, and store raw Markdown content in MongoDB.\
+			 • Designed an intuitive Markdown Editor to empower non-technical staff in customizing and formatting blogs effectively.",
+		logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+		linkText: "View Project",
+		link: "https://github.com/mgpai22/ergo-explorer",
+		},
+		{
+		title: "ERGO Explorer | NextJs, TailwindCSS, Axios Dec 2023 - Present",
+		description:
+			"• Engineered a template and built custom UI components in NextJs styled using tailwind CSS.\
+			 • Built dynamic cohesive components and integrated Ergo node API\
+			 • Learnt about UTxO blockchain infrastructure",
+		logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+		linkText: "View Project",
+		link: "https://github.com/mgpai22/ergo-explorer",
+		},
+		{
+		title: "Crohns-Log | React Native, Beautifulsoup, ExpressJS November 2023",
+		description:
+			"• Designed and implemented a dynamic front-end built in React Native that leveraged the Context API for efficient App-wide state management.\
+			 • Successfully scraped UMass Dining data and stored it in a PostgreSQL database hosted on Supabase. Created an ExpressJS RESTful API to ensure seamless access to the data.\
+			 • Optimized deployment processes by containerizing the Express app using Docker, resulting in enhanced performance and efficiency when hosting on Linode server",
+		logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+		linkText: "View Project",
+		link: "https://github.com/Timmald/CLog/",
+		},
+		{
 			title: "Login/Registration CRUD Application | Django, React",
 			description:
 				"Built a CRUD page with JWT authentication using Python and Javascript.",
