@@ -5,7 +5,7 @@ const INFO = {
 		title: "Abhijit's Website",
 		name: "Abhijit Ajit Kamath",
 		email: "kamathabhijit2002@gmail.com",
-		logo: "../logo.png",
+		logo: "../AbhijitLogo.png",
 	},
 
 	socials: {
@@ -38,36 +38,40 @@ const INFO = {
 
 	projects: [
 		{
-		title: "Amherst Education Foundation Website | NextJs, ExpressJS, AWS, MongoDB Dec 2023 - Present",
+		title: "Amherst Education Foundation Website | NextJs, ExpressJS, AWS, MongoDB ",
+		date: "Dec 2023 - Present",
 		description:
-			"• Developed a REST API with Express to facilitate image storage in an AWS S3 Bucket, manage static website content, and store raw Markdown content in MongoDB.\n\
+			"• Developed a REST API with Express to facilitate image storage in an AWS S3 Bucket, manage static website content, and store raw Markdown content in MongoDB.\
 			 • Designed an intuitive Markdown Editor to empower non-technical staff in customizing and formatting blogs effectively.",
 		logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 		linkText: "View Project",
 		link: "https://github.com/mgpai22/ergo-explorer",
 		},
 		{
-		title: "ERGO Explorer | NextJs, TailwindCSS, Axios Dec 2023 - Present",
+		title: "ERGO Explorer | NextJs, TailwindCSS, Axios",
+		date: "Dec 2023 - Present",
 		description:
-			"• Engineered a template and built custom UI components in NextJs styled using tailwind CSS.\n\
-			 • Built dynamic cohesive components and integrated Ergo node API.\n\
-			 • Learnt about UTxO blockchain infrastructure".
+			"• Engineered a template and built custom UI components in NextJs styled using tailwind CSS.\
+			 • Built dynamic cohesive components and integrated Ergo node API.\
+			 • Learnt about UTxO blockchain infrastructure",
 		logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 		linkText: "View Project",
 		link: "https://github.com/mgpai22/ergo-explorer",
 		},
 		{
-		title: "Crohns-Log | React Native, Beautifulsoup, ExpressJS November 2023",
+		title: "Crohns-Log | React Native, Beautifulsoup, ExpressJS",
+		date: "November 2023",
 		description:
-			"• Designed and implemented a dynamic front-end built in React Native that leveraged the Context API for efficient App-wide state management.\n\
-			 • Successfully scraped UMass Dining data and stored it in a PostgreSQL database hosted on Supabase. Created an ExpressJS RESTful API to ensure seamless access to the data.\n\
-			 • Optimized deployment processes by containerizing the Express app using Docker, resulting in enhanced performance and efficiency when hosting on Linode server".
+			"• Designed and implemented a dynamic front-end built in React Native that leveraged the Context API for efficient App-wide state management.\
+			 • Successfully scraped UMass Dining data and stored it in a PostgreSQL database hosted on Supabase. Created an ExpressJS RESTful API to ensure seamless access to the data.\
+			 • Optimized deployment processes by containerizing the Express app using Docker, resulting in enhanced performance and efficiency when hosting on Linode server",
 		logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 		linkText: "View Project",
 		link: "https://github.com/Timmald/CLog/",
 		},
 		{
 			title: "Login/Registration CRUD Application | Django, React",
+			date: "June - July 2023",
 			description:
 				"Built a CRUD page with JWT authentication using Python and Javascript.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
@@ -75,7 +79,9 @@ const INFO = {
 			link: "https://github.com/abhijit360/Login-Registration-API-Backend",
 		},
 		{
-			title: "Data Retrieval, Analysis, visualisation | Python, BeautifulSoup4, Pandas, Seaborn and Matplotlib ",
+			title: "Data Retrieval, Analysis, visualisation | Python, BeautifulSoup4, Pandas, Seaborn and Matplotlib",
+			date: "",
+			datee: "August - September 2023",
 			description:
 				"Webscraped and cleaned data and formatted it into a CSV file. Visualised the data using seaborn and Matplotlib",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
@@ -85,6 +91,7 @@ const INFO = {
 
 		{
 			title: "Data Retrieval API with MySQL Database | Django, SQL",
+			date: "",
 			description:
 				"Built an GET/POST API and wrote raw SQL queries to integrate into a MySQL database",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
@@ -94,6 +101,7 @@ const INFO = {
 
 		{
 			title: "TurtleSplash | python",
+			date: "",
 			description: "Wrote a game using the pygame library in python.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
 			linkText: "View Project",
@@ -102,6 +110,7 @@ const INFO = {
 
 		{
 			title: "Food Delivery React Page | React.js, CSS",
+			date: "",
 			description:
 				"I built an interactive page in React.js and added my custom styling in css as part of an Udemy Course",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
@@ -112,12 +121,14 @@ const INFO = {
 		{
 			title: "Hitch",
 			description: "Designed the UI for a ride sharing application.",
+			date: "",
 			logo: "./FigmaLogo.png",
 			linkText: "Read more about my work",
 			link: "/Involvements",
 		},
 		{
 			title: "Kinsei",
+			date: "",
 			description: "Designed a website for a NFT minting service",
 			logo: "./FigmaLogo.png",
 			linkText: "",

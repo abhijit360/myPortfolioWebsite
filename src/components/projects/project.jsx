@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
@@ -6,8 +6,8 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import "./styles/project.css";
 
 const Project = (props) => {
-	const { logo, title, description, linkText, link } = props;
-
+	const { logo, title, description, linkText, link, date} = props;
+	const [descriptionVisibility, setDescriptionVisibility] = useState(false);
 	let linkedIcon = [];
 	if (link.length !== 0) {
 		linkedIcon.push(
@@ -24,12 +24,17 @@ const Project = (props) => {
 		<React.Fragment>
 			<div className="project">
 				<Link to={link}>
-					<div className="project-container">
+					<div onMouseEnter={()=>{setDescriptionVisibility(true)}} onMouseLeave={()=>{setDescriptionVisibility(false)}}  className="project-container">
 						<div className="project-logo">
 							<img src={logo} alt="logo" />
 						</div>
-						<div className="project-title">{title}</div>
-						<div className="project-description">{description}</div>
+						<div className="project-title-date-container">
+							<span className="project-title">{title}</span>
+							<span className="project-date" style={date === "" ? {scale: 0,} : {scale:1}}>{date}</span>
+							</div>
+						
+						
+						<div className={descriptionVisibility ? "project-description-visible" : "project-description-invisible"}>{description}</div>
 						{linkedIcon}
 					</div>
 				</Link>
