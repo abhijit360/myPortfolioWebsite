@@ -172,7 +172,7 @@ const Homepage = () => {
 						<h1>Involvements</h1>
 						<div className="homepage-after-title">
 							<div className="homepage-articles">
-								{myArticles.map((article, index) => (
+								{myArticles.slice(0,1).map((article, index) => (
 									<div
 										className="homepage-article"
 										key={(index + 1).toString()}
@@ -187,11 +187,12 @@ const Homepage = () => {
 									</div>
 								))}
 							</div>
-
-							{/* <div className="homepage-works">
-								<Works />
-							</div> */}
-						</div>
+						 </div> 
+						<Link className="link-one" to="/projects">
+							<FontAwesomeIcon
+							style={{ fontSize: "10px" }}
+							icon={faChevronRight}
+							/> Read about my other Involvements</Link>
 						<div className="page-footer">
 							<Footer />
 						</div>

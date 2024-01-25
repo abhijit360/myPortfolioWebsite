@@ -41,7 +41,7 @@
 }
 
 .read-article-date-container {
-	border-left: 2px solid var(--quaternary-color);
+	border-left: 2px solid #000000;
 	color: var(--tertiary-color);
 	font-size: 16 px;
 	align-items: center;
@@ -50,6 +50,8 @@
 
 .read-article-date {
 	font-family: var(--primary-font);
+	color: #000000;
+	font-weight: 600;
 	padding-left: 15px;
 }
 
