@@ -6,7 +6,7 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import "./styles/project.css";
 
 const Project = (props) => {
-	const { logo, title, description, linkText, link, date} = props;
+	const { logo, title, description, linkText, link, date, homePage} = props;
 	const [descriptionVisibility, setDescriptionVisibility] = useState(false);
 	let linkedIcon = [];
 	if (link.length !== 0) {
@@ -31,10 +31,11 @@ const Project = (props) => {
 						<div className="project-title-date-container">
 							<span className="project-title">{title}</span>
 							<span className="project-date" style={date === "" ? {scale: 0,} : {scale:1}}>{date}</span>
-							</div>
+						</div>
 						
 						
-						<div className={descriptionVisibility ? "project-description-visible" : "project-description-invisible"}>{description}</div>
+						{homePage && <div className={descriptionVisibility ? "project-description-visible" : "project-description-invisible"}>{description}</div>}
+						{!homePage && <div className="project-description-visible">{description}</div>}
 						{linkedIcon}
 					</div>
 				</Link>

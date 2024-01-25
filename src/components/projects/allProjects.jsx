@@ -18,6 +18,7 @@ const AllProjects = () => {
 						linkText={project.linkText}
 						link={project.link}
 						date={project.date}
+						homePage={false}
 					/>
 				</div>
 			))}

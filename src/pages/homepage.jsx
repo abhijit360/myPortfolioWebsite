@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 
-import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
+import { faMailBulk,faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faGithub,
@@ -13,11 +13,12 @@ import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
 import Article from "../components/homepage/article";
 import Works from "../components/about/works";
-import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
 import myArticles from "../data/articles";
+import Project from "../components/projects/project";
+import { Link } from "react-router-dom";
 
 import "./styles/homepage.css";
 
@@ -146,7 +147,26 @@ const Homepage = () => {
 
 						<div className="homepage-projects">
 							<h1>Projects</h1>
-							<AllProjects />
+							<div className="homepage-projects-container">
+							{INFO.projects.slice(0,3).map((project, index) => (
+								<div className="all-projects-project" key={index}>
+									<Project
+										logo={project.logo}
+										title={project.title}
+										description={project.description}
+										linkText={project.linkText}
+										link={project.link}
+										date={project.date}
+										homePage={true}
+									/>
+								</div>
+									))}
+							</div>
+							<Link className="link-one" to="/projects">
+								<FontAwesomeIcon
+								style={{ fontSize: "10px" }}
+								icon={faChevronRight}
+								/> View more Projects</Link>
 						</div>
 
 						<h1>Involvements</h1>
