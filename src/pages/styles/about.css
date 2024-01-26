@@ -49,7 +49,7 @@
 
 .about-image-wrapper {
 	display: inline-block;
-	overflow: hidden;
+	
 	width: 100%;
 	border-radius: 10%;
 	transform: rotate(3deg);
@@ -82,6 +82,8 @@
 	display: flex;
 	flex-direction: row;
 	padding: 1rem 5rem;
+	margin-top: 5rem;
+	margin-bottom: 3rem;
 }
 
 .work-employers-list{
@@ -116,7 +118,8 @@
 	padding-top: 0.5rem;
 	padding-left: 1rem;
 	display: inline-block;
-	overflow: hidden
+	overflow: scroll;
+	overflow-x:hidden;
 }
 
 .work-experience-title{
@@ -136,6 +139,7 @@
 	padding: 0.25rem 0.5rem;
 	border-radius: 2rem;
 	cursor: default;
+	width: auto;
 }
 
 .skill-container:hover{

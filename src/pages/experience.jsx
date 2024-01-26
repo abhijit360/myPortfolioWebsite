@@ -67,11 +67,11 @@ const About = () => {
 												return(
 													<div>
 														<div className="work-experience-container">
-															<div style={{display: "flex", flexDirection:"row", alignItems: "center", gap: "10px"}}>
+															<div style={{display: "flex", flexDirection:"row", alignItems: "center", rowGap: "5px", columnGap:"10px", flexWrap:"wrap"}}>
 																<p className="work-experience-title">{experience.jobTitle}</p>
 																<p className="work-experience-date">{experience.date}</p>
 															</div>
-															<div style={{display: "flex", flexDirection:"row", alignItems: "center", gap: "10px"}} >
+															<div style={{display: "flex", flexDirection:"row", flexWrap:"wrap", alignItems: "center", gap: "10px"}} >
 																{experience.skills.split(",").map((skill) =>(<span className="skill-container">{skill}</span>))}
 															</div>
 															
