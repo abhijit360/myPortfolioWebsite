@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 
 import NavBar from "../components/common/navBar";
@@ -17,6 +17,7 @@ const About = () => {
 		window.scrollTo(0, 0);
 	}, []);
 
+	const[viewExperience,setViewExperience] = useState(0);
 	const currentSEO = SEO.find((item) => item.page === "about");
 
 	return (
@@ -40,37 +41,73 @@ const About = () => {
 					</div>
 
 					<div className="about-container">
-						<div className="about-main">
-							<div className="about-right-side">
+							
 								<div className="title about-title">
 									{INFO.about.title}
 								</div>
 
-								<div className="subtitle about-subtitle">
-									{INFO.about.description}
-								</div>
-							</div>
+				
+									<div className="subtitle about-subtitle">
+										{INFO.about.description}
+									</div>
 
-							<div className="about-left-side">
-								<div className="about-image-container">
-									<div className="about-image-wrapper">
-										<img
-											src="AbhijitAboutusPage.jpg"
-											alt="about"
-											className="about-image"
-										/>
+								<div className="work-container">
+									<div className="work-employers-list">
+										{
+											INFO.pastEmployers.map((employer, index)=>(
+												<span key={index} className={viewExperience == index ? "work-employer-name-selected" : "work-employer-name"} key={index} onClick={() =>{
+													setViewExperience(index)
+												}}>{employer}</span>
+											))
+										}
+									</div>
+									<div>
+										{
+											INFO.workExperience.filter((val, index)=> index ==viewExperience).map((experience, index) => {
+												return(
+													<div>
+														<div className="work-experience-container">
+															<div style={{display: "flex", flexDirection:"row", alignItems: "center", gap: "10px"}}>
+																<p className="work-experience-title">{experience.jobTitle}</p>
+																<p className="work-experience-date">{experience.date}</p>
+															</div>
+															<div style={{display: "flex", flexDirection:"row", alignItems: "center", gap: "10px"}} >
+																{experience.skills.split(",").map((skill) =>(<span className="skill-container">{skill}</span>))}
+															</div>
+															
+															<div>
+															{
+															experience.description.map((desc, index) =>(
+																<>
+																<div style={{display: "flex", flexDirection:"row", alignItems:"center", gap:"10px"}}>
+																	<div className="icon"></div>
+																	<p className="work-experience-description">{desc}</p>
+																</div>
+																</>
+															))
+															}
+															</div>
+															
+															
+					
+														</div>
+													</div>
+												)})
+										}
 									</div>
 								</div>
-
-								<div className="about-works">
+								
+								{/* <div className="about-works">
 									<Works />
-								</div>
+								</div> */}
 
 								<div className="about-socials">
 									<Socials />
 								</div>
-							</div>
-						</div>
+
+					
+
+					
 						<div className="about-works-mobile">
 							<Works />
 						</div>

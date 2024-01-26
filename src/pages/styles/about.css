@@ -78,6 +78,88 @@
 	display:none;
 }
 
+.work-container{
+	display: flex;
+	flex-direction: row;
+	padding: 1rem 5rem;
+}
+
+.work-employers-list{
+	
+	background-color: #878c8f;
+	display: flex;
+	flex-direction: column;
+	height: 408px
+}
+
+.work-employer-name{
+	width: 105px;
+	background-color: #c4cad0;
+	font-weight: 600;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+}
+
+.work-employer-name-selected{
+	border-left: 5px solid var(--link-color);
+	color: #fcf7ff;
+	width: 100px;
+	background-color: #483D3D;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+}
+
+.work-experience-container{
+	/* background-color: black; */
+	background-color: #878c8f; /* #fcf7ff; */
+	height:400px;
+	padding-top: 0.5rem;
+	padding-left: 1rem;
+	display: inline-block;
+	overflow: hidden
+}
+
+.work-experience-title{
+	font-weight:bold;
+	font-size: 20px;
+}
+
+.work-experience-date{
+	font-size: 16px;
+	font-weight:00;
+}
+
+.skill-container{
+	background-color: #fcf7ff;
+	color: black;
+	font-weight: 800;
+	padding: 0.25rem 0.5rem;
+	border-radius: 2rem;
+	cursor: default;
+}
+
+.skill-container:hover{
+	background-color: #483D3D;
+	color: var(--link-color); ;
+	font-weight: 800;
+	padding: 0.25rem 0.5rem;
+	border-radius: 2rem;
+}
+
+.work-experience-description{
+	font-weight: 500;
+}
+.icon{
+	height: 0;
+	width: 0;
+	scale: 2;
+	transform: rotate(135deg);
+	border-top: 1px solid white;
+	border-left: 1px solid white;
+	border-bottom: 3px solid transparent;
+	border-right: 3px solid transparent;
+}
+
 @media (max-width: 1024px) {
 	.about-logo {
 		z-index: 100;
