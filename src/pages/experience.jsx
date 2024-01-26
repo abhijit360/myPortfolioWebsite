@@ -105,12 +105,6 @@ const About = () => {
 									<Socials />
 								</div>
 
-					
-
-					
-						<div className="about-works-mobile">
-							<Works />
-						</div>
 						<div className="about-socials-mobile">
 							<Socials />
 						</div>

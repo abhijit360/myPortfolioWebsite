@@ -65,7 +65,7 @@ const INFO = {
 			jobTitle: "University of Massachusetts Amherst",
 			date: "Oct 2022 - present",
 			description:["Diagnosed and resolved Account management, Networking, and software issues","Communicated with clients through different mediums such as email triage, walk-ins, and live chat support."],
-			skills: "Python, postgeSQL"
+			skills: "IT, Networking, Software and Hardware consultation, customer relations, Email Triage"
 		}
 	],
 
