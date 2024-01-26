@@ -88,7 +88,7 @@
 
 .work-employers-list{
 	
-	background-color: #878c8f;
+	background-color: #B5B8BA;
 	display: flex;
 	flex-direction: column;
 	height: 408px
@@ -113,7 +113,7 @@
 
 .work-experience-container{
 	/* background-color: black; */
-	background-color: #878c8f; /* #fcf7ff; */
+	background-color: #B5B8BA; /* #fcf7ff; */
 	height:400px;
 	padding-top: 0.5rem;
 	padding-left: 1rem;
