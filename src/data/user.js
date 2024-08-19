@@ -41,7 +41,14 @@ const INFO = {
 	workExperience: [
 		{
 			Employer: "Fintoo",
-			jobTitle: "Full Stack Software Engineer",
+			jobTitle: "Software Engineering Intern",
+			date: "May 2024 - August 2024",
+			description:["Developed a login/registration page using React, Django, and styled using CSS by collaborating with a team of developers","Built a RESTful CRUD API and implemented JWT token-based authentication to ensure robust user identity verification, authorization, and security","Leveraged Django Rest Framework and SQL by building models and serializers, optimizing the processing of user input"],
+			skills: "Python, Power BI, Data Analysis & ETL, API management, Scripting"
+		},
+		{
+			Employer: "Fintoo",
+			jobTitle: "Software Engineering Intern",
 			date: "June 2023 - July 2023",
 			description:["Developed a login/registration page using React, Django, and styled using CSS by collaborating with a team of developers","Built a RESTful CRUD API and implemented JWT token-based authentication to ensure robust user identity verification, authorization, and security","Leveraged Django Rest Framework and SQL by building models and serializers, optimizing the processing of user input"],
 			skills: "Django, Django Rest Framework, React, Axios, JWT Tokens, SQL"
@@ -56,7 +63,7 @@ const INFO = {
 		{
 			Employer: "Resource Economics Department @ UMass Amherst",
 			jobTitle: "Research Assistant",
-			date: "Jan 2024 - present",
+			date: "Jan 2024 - February 2025",
 			description:["Currently working with Prof. Christian Rojas to build PostgreSQL database","Wrote a script in python to build a robust and efficient data pipeline that extracts data by crawling files and loads the data into the right tables of database"],
 			skills: "Python, postgeSQL"
 		},
@@ -71,22 +78,33 @@ const INFO = {
 
 	projects: [
 		{
+			title: "LockIn| React, Webpack",
+			date: "July 2024",
+			description:
+				"• 5 Active Users.\
+				 • Seamless integration with Google calendar to help reduce the number of applications that I use to track my productivity.\
+				 • Built a productivity tool using ReactJs and webpack to help track my time a little better.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+			linkText: "View Project",
+			link: "https://chromewebstore.google.com/detail/lockin/fohghkfognhohfaikcggbjeclldlhfgd?authuser=0&hl=en",
+			},
+		{
+			title: "ERGO Explorer | NextJs, TailwindCSS, Axios",
+			date: "Dec 2023 - Feb 2024",
+			description:
+				"• Engineered a template and built custom UI components in NextJs styled using tailwind CSS.\
+				 • Built dynamic cohesive components and integrated Ergo node API.\
+				 • Learnt about UTxO blockchain infrastructure",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+			linkText: "View Project",
+			link: "https://ergo-explorer.vercel.app/",
+			},
+		{
 		title: "Amherst Education Foundation Website | NextJs, ExpressJS, AWS, MongoDB ",
-		date: "Dec 2023 - Present",
+		date: "Dec 2023 - March 2024",
 		description:
 			"• Developed a REST API with Express to facilitate image storage in an AWS S3 Bucket, manage static website content, and store raw Markdown content in MongoDB.\
 			 • Designed an intuitive Markdown Editor to empower non-technical staff in customizing and formatting blogs effectively.",
-		logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-		linkText: "View Project",
-		link: "https://github.com/mgpai22/ergo-explorer",
-		},
-		{
-		title: "ERGO Explorer | NextJs, TailwindCSS, Axios",
-		date: "Dec 2023 - Present",
-		description:
-			"• Engineered a template and built custom UI components in NextJs styled using tailwind CSS.\
-			 • Built dynamic cohesive components and integrated Ergo node API.\
-			 • Learnt about UTxO blockchain infrastructure",
 		logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 		linkText: "View Project",
 		link: "https://github.com/mgpai22/ergo-explorer",
