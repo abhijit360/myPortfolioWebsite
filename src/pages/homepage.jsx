@@ -182,13 +182,13 @@ const Homepage = () => {
 											date={article().date}
 											title={article().title}
 											description={article().description}
-											link={"/article/" + (index + 1)}
+											link={"/blog/" + (index + 1)}
 										/>
 									</div>
 								))}
 							</div>
 						 </div> 
-						<Link className="link-one" to="/projects">
+						<Link className="link-one" to="/involvements">
 							<FontAwesomeIcon
 							style={{ fontSize: "10px" }}
 							icon={faChevronRight}
