@@ -55,7 +55,7 @@ const About = () => {
 									<div className="work-employers-list">
 										{
 											INFO.pastEmployers.map((employer, index)=>(
-												<span key={index} className={viewExperience == index ? "work-employer-name-selected" : "work-employer-name"} key={index} onClick={() =>{
+												<span key={index} className={viewExperience === index ? "work-employer-name-selected" : "work-employer-name"} key={index} onClick={() =>{
 													setViewExperience(index)
 												}}>{employer}</span>
 											))
@@ -63,7 +63,7 @@ const About = () => {
 									</div>
 									<div>
 										{
-											INFO.workExperience.filter((val, index)=> index ==viewExperience).map((experience, index) => {
+											INFO.workExperience.filter((val, index)=> index === viewExperience).map((experience, index) => {
 												return(
 													<div>
 														<div className="work-experience-container">

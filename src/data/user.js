@@ -36,44 +36,84 @@ const INFO = {
 			"Here are a couple of Groups and projects that I am passionate about.",
 	},
 
-	pastEmployers:["Fintoo","Reliance Industries","Resource Economics @ umass","IT consultant"],
+	pastEmployers: [
+		"LinkedIn",
+		"Flexcar",
+		"Fintoo",
+		"Vestmark",
+		"Reliance Industries",
+		"Resource Economics @ umass",
+		"IT consultant",
+	],
 
 	workExperience: [
 		{
-			Employer: "Fintoo",
+			Employer: "LinkedIn",
+			jobTitle: "Software Engineering Intern",
+			date: "June 2025 - Sept 2025",
+			description: ["Incoming software engineer at LinkedIn @ Sunnyvale"],
+			skills: "",
+		},
+		{
+			Employer: "Flexcar",
+			jobTitle: "Software Engineering Intern",
+			date: "Jan 2025 - June 2024",
+			description: ["Incoming software engineer at Flexcar @ Boston"],
+			skills: "Typescript",
+		},
+		{
+			Employer: "Vestmark",
 			jobTitle: "Software Engineering Intern",
 			date: "May 2024 - August 2024",
-			description:["Developed a login/registration page using React, Django, and styled using CSS by collaborating with a team of developers","Built a RESTful CRUD API and implemented JWT token-based authentication to ensure robust user identity verification, authorization, and security","Leveraged Django Rest Framework and SQL by building models and serializers, optimizing the processing of user input"],
-			skills: "Python, Power BI, Data Analysis & ETL, API management, Scripting"
+			description: [
+				"Built an internal tool in Python to obtain, clean, and visualize data measuring development data across teams. Scaled tool to 10+ teams, optimized through multi-threading and graph traversal algorithms.",
+				"Increased the speed of a previously written toolkit in Java by 15% by refactoring the code to Python.",
+				"Aggregated data into reports to obtain business metrics required for key decisions on project trajectory and funding using Power BI.",
+			],
+			skills: "Python, Power BI, Data Analysis & ETL, API management, Scripting",
 		},
 		{
 			Employer: "Fintoo",
 			jobTitle: "Software Engineering Intern",
 			date: "June 2023 - July 2023",
-			description:["Developed a login/registration page using React, Django, and styled using CSS by collaborating with a team of developers","Built a RESTful CRUD API and implemented JWT token-based authentication to ensure robust user identity verification, authorization, and security","Leveraged Django Rest Framework and SQL by building models and serializers, optimizing the processing of user input"],
-			skills: "Django, Django Rest Framework, React, Axios, JWT Tokens, SQL"
+			description: [
+				"Developed a login/registration page using React, Django, and styled using CSS by collaborating with a team of developers.",
+				"Built a RESTful CRUD API and implemented JWT token-based authentication to ensure robust user identity verification, authorization, and security.",
+				"Leveraged Django Rest Framework and SQL by building models and serializers, optimizing the processing of user input.",
+			],
+			skills: "Django, Django Rest Framework, React, Axios, JWT Tokens, SQL",
 		},
 		{
 			Employer: "Reliance Industries (Youth Sport department)",
 			jobTitle: "Data Analyst",
 			date: "August 2023 - September 2023",
-			description:["Spearheaded a data optimisation initiative by automating the data retrieval process through webscraping using BeautifulSoup4 python Library, resulting in an 100% increase in efficiency","Applied data preprocessing techniques to clean and format raw sports data using Pandas python Library, transforming it into a structured and usable format.","Contributed to enhancing athlete performance for international competitions, including the Asian Games 2023."],
-			skills: "Python, Pandas, Seaborn, Beautiful Soup"
+			description: [
+				"Spearheaded a data optimization initiative by automating the data retrieval process through web scraping using BeautifulSoup4 Python Library, resulting in a 100% increase in efficiency.",
+				"Applied data preprocessing techniques to clean and format raw sports data using Pandas Python Library, transforming it into a structured and usable format.",
+				"Contributed to enhancing athlete performance for international competitions, including the Asian Games 2023.",
+			],
+			skills: "Python, Pandas, Seaborn, Beautiful Soup",
 		},
 		{
 			Employer: "Resource Economics Department @ UMass Amherst",
 			jobTitle: "Research Assistant",
 			date: "Jan 2024 - February 2025",
-			description:["Currently working with Prof. Christian Rojas to build PostgreSQL database","Wrote a script in python to build a robust and efficient data pipeline that extracts data by crawling files and loads the data into the right tables of database"],
-			skills: "Python, postgeSQL"
+			description: [
+				"Currently working with Prof. Christian Rojas to build a PostgreSQL database.",
+				"Wrote a script in Python to build a robust and efficient data pipeline that extracts data by crawling files and loads the data into the right tables of the database.",
+			],
+			skills: "Python, PostgreSQL",
 		},
 		{
-			Employer: "IT consultant",
+			Employer: "IT Consultant",
 			jobTitle: "University of Massachusetts Amherst",
 			date: "Oct 2022 - present",
-			description:["Diagnosed and resolved Account management, Networking, and software issues","Communicated with clients through different mediums such as email triage, walk-ins, and live chat support."],
-			skills: "IT, Networking, Software and Hardware consultation, customer relations, Email Triage"
-		}
+			description: [
+				"Diagnosed and resolved account management, networking, and software issues.",
+				"Communicated with clients through different mediums such as email triage, walk-ins, and live chat support.",
+			],
+			skills: "IT, Networking, Software and Hardware consultation, Customer Relations, Email Triage",
+		},
 	],
 
 	projects: [
@@ -87,7 +127,7 @@ const INFO = {
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 			linkText: "View Project",
 			link: "https://chromewebstore.google.com/detail/lockin/fohghkfognhohfaikcggbjeclldlhfgd?authuser=0&hl=en",
-			},
+		},
 		{
 			title: "ERGO Explorer | NextJs, TailwindCSS, Axios",
 			date: "Dec 2023 - Feb 2024",
@@ -98,27 +138,27 @@ const INFO = {
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 			linkText: "View Project",
 			link: "https://ergo-explorer.vercel.app/",
-			},
-		{
-		title: "Amherst Education Foundation Website | NextJs, ExpressJS, AWS, MongoDB ",
-		date: "Dec 2023 - March 2024",
-		description:
-			"• Developed a REST API with Express to facilitate image storage in an AWS S3 Bucket, manage static website content, and store raw Markdown content in MongoDB.\
-			 • Designed an intuitive Markdown Editor to empower non-technical staff in customizing and formatting blogs effectively.",
-		logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-		linkText: "View Project",
-		link: "https://github.com/mgpai22/ergo-explorer",
 		},
 		{
-		title: "Crohns-Log | React Native, Beautifulsoup, ExpressJS",
-		date: "November 2023",
-		description:
-			"• Designed and implemented a dynamic front-end built in React Native that leveraged the Context API for efficient App-wide state management.\
+			title: "Amherst Education Foundation Website | NextJs, ExpressJS, AWS, MongoDB ",
+			date: "Dec 2023 - March 2024",
+			description:
+				"• Developed a REST API with Express to facilitate image storage in an AWS S3 Bucket, manage static website content, and store raw Markdown content in MongoDB.\
+			 • Designed an intuitive Markdown Editor to empower non-technical staff in customizing and formatting blogs effectively.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+			linkText: "View Project",
+			link: "https://github.com/mgpai22/ergo-explorer",
+		},
+		{
+			title: "Crohns-Log | React Native, Beautifulsoup, ExpressJS",
+			date: "November 2023",
+			description:
+				"• Designed and implemented a dynamic front-end built in React Native that leveraged the Context API for efficient App-wide state management.\
 			 • Successfully scraped UMass Dining data and stored it in a PostgreSQL database hosted on Supabase. Created an ExpressJS RESTful API to ensure seamless access to the data.\
 			 • Optimized deployment processes by containerizing the Express app using Docker, resulting in enhanced performance and efficiency when hosting on Linode server",
-		logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-		linkText: "View Project",
-		link: "https://github.com/Timmald/CLog/",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+			linkText: "View Project",
+			link: "https://github.com/Timmald/CLog/",
 		},
 		{
 			title: "Login/Registration CRUD Application | Django, React",

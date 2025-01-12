@@ -26,8 +26,10 @@ function App() {
 				<Route path="/" element={<Homepage />} />
 				<Route path="/experience" element={<About />} />
 				<Route path="/projects" element={<Projects />} />
-				<Route path="/Involvements" element={<Articles />} />
-				<Route path="/Involvement/:slug" element={<ReadArticle />} />
+				<Route path="/involvements" element={<Articles />} />
+				<Route path="/involvement/:slug" element={<ReadArticle />} />
+				{/* <Route path="/blog" element={<Articles />} /> */}
+				{/* <Route path="/blog/:slug" element={<ReadArticle />} /> */}
 				<Route path="/contact" element={<Contact />} />
 				<Route path="*" element={<Notfound />} />
 			</Routes>
