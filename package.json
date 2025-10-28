@@ -57,5 +57,8 @@
 	"prettier": {
 		"useTabs": true,
 		"tabWidth": 4
+	},
+	"engines": {
+		"node": "22.x"
 	}
 }
