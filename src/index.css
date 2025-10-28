@@ -1,11 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Roboto:wght@500&display=swap");
 @import "./data/styles.css";
+
+html {
+	scroll-behavior: smooth;
+}
 
 body {
 	margin: 0;
 	font-family: var(--primary-font);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background-color: #0b1e33; /* dark navy */
+	color: #e6edf3; /* light text for dark bg */
 }
 
 code {

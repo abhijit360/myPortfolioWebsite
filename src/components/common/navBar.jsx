@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// Using anchor links for single-page navigation
 
 import "./styles/navBar.css";
 
@@ -19,7 +19,7 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/">Home</Link>
+								<a href="#home">Home</a>
 							</li>
 							<li
 								className={
@@ -28,7 +28,7 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/experience">Experience</Link>
+								<a href="#experience">Experience</a>
 							</li>
 							<li
 								className={
@@ -37,17 +37,9 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/projects">Projects</Link>
+								<a href="#projects">Projects</a>
 							</li>
-							<li
-								className={
-									active === "articles"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
-								<Link to="/Involvements">Involvements</Link>
-							</li>
+
 							<li
 								className={
 									active === "contact"
@@ -55,7 +47,7 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/contact">Contact</Link>
+								<a href="#contact">Contact</a>
 							</li>
 						</ul>
 					</div>

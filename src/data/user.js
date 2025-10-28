@@ -19,13 +19,13 @@ const INFO = {
 	},
 
 	homepage: {
-		title: "Software Engineer, designer, tech enthusiast",
+		title: "Hello, I'm Abhi.",
 		description:
-			"I am a budding software engineer who is pursuing a Honors Computer Science and Mathematics double major at the University of Massachusetts Amherst. I am exploring full stack development and I also have keen interest in Machine learning, finance, and designing",
+			"Software Engineer at LinkedIn, shaping the future of professional networking.",
 	},
 
 	about: {
-		title: "I’m Abhijit Ajit Kamath. Building my dreams from Amherst, MA.",
+		title: "Tinkering away .",
 		description:
 			"I began programming about a year ago. I am a passionate problem solver and love taking on a challenge. I am currenlty exploring web and mobile development",
 	},
@@ -215,7 +215,7 @@ const INFO = {
 			date: "",
 			logo: "./FigmaLogo.png",
 			linkText: "Read more about my work",
-			link: "/Involvements",
+			link: "#projects",
 		},
 		{
 			title: "Kinsei",

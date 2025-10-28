@@ -78,7 +78,7 @@
 	padding-top: 40px;
 }
 
-.homepage-projects-container{
+.homepage-projects-container {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: stretch;
@@ -103,15 +103,104 @@
 	padding-top: 30px;
 }
 
-.link-one{
+.link-one {
 	font-weight: 700;
 	font-family: inherit;
 	text-decoration: none;
-	
 }
 
-.link-one:hover{
+.link-one:hover {
 	color: #739a7a;
+}
+
+/* Experience tiles */
+.experience-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+	gap: 20px;
+	margin-top: 20px;
+}
+
+.experience-tile {
+	background: #0f2440;
+	border: 2px solid #102a43;
+	border-radius: 12px;
+	padding: 16px;
+	box-shadow: 0 0 0 3px rgba(16, 42, 67, 0.4) inset,
+		0 8px 18px rgba(0, 0, 0, 0.25);
+	transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.experience-tile:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 0 0 3px rgba(16, 42, 67, 0.6) inset,
+		0 12px 24px rgba(0, 0, 0, 0.35);
+}
+
+.company-name {
+	font-family: "Press Start 2P", cursive;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	animation: companyColorCycle 6s linear infinite;
+}
+
+@keyframes companyColorCycle {
+	0% {
+		color: #58a6ff;
+	}
+	25% {
+		color: #7ee787;
+	}
+	50% {
+		color: #ff7b72;
+	}
+	75% {
+		color: #d2a8ff;
+	}
+	100% {
+		color: #58a6ff;
+	}
+}
+
+.job-title {
+	color: var(--primary-color);
+	font-weight: 700;
+	margin-bottom: 6px;
+}
+
+.date-range {
+	color: var(--tertiary-color);
+	font-size: 12px;
+	margin-bottom: 12px;
+}
+
+.skills-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin-bottom: 12px;
+}
+
+.skill-badge {
+	background: #0b1e33;
+	border: 1px solid #102a43;
+	color: #c9d1d9;
+	padding: 4px 8px;
+	border-radius: 6px;
+	font-size: 11px;
+}
+
+.desc-list {
+	margin: 0;
+	padding-left: 18px;
+}
+
+.desc-list li {
+	color: var(--secondary-color);
+	margin-bottom: 8px;
+	list-style-type: square;
 }
 
 @media (max-width: 1024px) {

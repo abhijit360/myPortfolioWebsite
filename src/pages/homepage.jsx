@@ -1,24 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 
-import { faMailBulk,faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faMailBulk, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faGithub,
-	faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
-import Article from "../components/homepage/article";
 import Works from "../components/about/works";
+import Socials from "../components/about/socials";
+import { ContactMeForm } from "../components/common/form";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import myArticles from "../data/articles";
 import Project from "../components/projects/project";
-import { Link } from "react-router-dom";
+// Single-page: use anchor links instead of router Links
 
 import "./styles/homepage.css";
 
@@ -78,7 +75,7 @@ const Homepage = () => {
 				/>
 			</Helmet>
 
-			<div className="page-content">
+			<div className="page-content" id="home">
 				<NavBar active="home" />
 				<div className="content-wrapper">
 					<div className="homepage-logo-container">
@@ -145,54 +142,97 @@ const Homepage = () => {
 							</a>
 						</div>
 
-						<div className="homepage-projects">
+						<div className="homepage-projects" id="projects">
 							<h1>Projects</h1>
 							<div className="homepage-projects-container">
-							{INFO.projects.slice(0,3).map((project, index) => (
-								<div className="all-projects-project" key={index}>
-									<Project
-										logo={project.logo}
-										title={project.title}
-										description={project.description}
-										linkText={project.linkText}
-										link={project.link}
-										date={project.date}
-										homePage={true}
-									/>
-								</div>
+								{INFO.projects
+									.slice(0, 3)
+									.map((project, index) => (
+										<div
+											className="all-projects-project"
+											key={index}
+										>
+											<Project
+												logo={project.logo}
+												title={project.title}
+												description={
+													project.description
+												}
+												linkText={project.linkText}
+												link={project.link}
+												date={project.date}
+												homePage={true}
+											/>
+										</div>
 									))}
 							</div>
-							<Link className="link-one" to="/projects">
+							<a className="link-one" href="#projects">
 								<FontAwesomeIcon
-								style={{ fontSize: "10px" }}
-								icon={faChevronRight}
-								/> View more Projects</Link>
+									style={{ fontSize: "10px" }}
+									icon={faChevronRight}
+								/>{" "}
+								View more Projects
+							</a>
 						</div>
 
-						<h1>Involvements</h1>
-						<div className="homepage-after-title">
-							<div className="homepage-articles">
-								{myArticles.slice(0,1).map((article, index) => (
-									<div
-										className="homepage-article"
-										key={(index + 1).toString()}
-									>
-										<Article
-											key={(index + 1).toString()}
-											date={article().date}
-											title={article().title}
-											description={article().description}
-											link={"/involvements/" + (index + 1)}
-										/>
+						{/* Experience Section anchor */}
+						<h1 id="experience">Experience</h1>
+						<div className="subtitle homepage-subtitle">
+							{INFO.about.description}
+						</div>
+						<div className="experience-grid">
+							{INFO.workExperience.map((experience, index) => (
+								<div className="experience-tile" key={index}>
+									<div className="company-name">
+										{experience.Employer}
 									</div>
-								))}
-							</div>
-						 </div> 
-						<Link className="link-one" to="/involvements">
-							<FontAwesomeIcon
-							style={{ fontSize: "10px" }}
-							icon={faChevronRight}
-							/> Read about my other Involvements</Link>
+									<div className="job-title">
+										{experience.jobTitle}
+									</div>
+									<div className="date-range">
+										{experience.date}
+									</div>
+									{experience.skills &&
+										experience.skills.length > 0 && (
+											<div className="skills-row">
+												{experience.skills
+													.split(",")
+													.map((skill, i) => (
+														<span
+															className="skill-badge"
+															key={i}
+														>
+															{skill.trim()}
+														</span>
+													))}
+											</div>
+										)}
+									<ul className="desc-list">
+										{experience.description.map(
+											(item, j) => (
+												<li key={j}>{item}</li>
+											)
+										)}
+									</ul>
+								</div>
+							))}
+						</div>
+						<div className="about-socials">
+							<Socials />
+						</div>
+
+						{/* Contact Section anchor */}
+						<h1 id="contact">Contact</h1>
+						<div className="subtitle homepage-subtitle">
+							You can reach me at &nbsp;
+							<a href={`mailto:${INFO.main.email}`}>
+								{INFO.main.email}
+							</a>
+							.
+						</div>
+						<div className="subtitle homepage-subtitle">
+							<ContactMeForm />
+						</div>
 						<div className="page-footer">
 							<Footer />
 						</div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// Single-page anchors for footer navigation
 
 import "./styles/footer.css";
 
@@ -10,19 +10,16 @@ const Footer = () => {
 				<div className="footer-links">
 					<ul className="footer-nav-link-list">
 						<li className="footer-nav-link-item">
-							<Link to="/">Home</Link>
+							<a href="#home">Home</a>
 						</li>
 						<li className="footer-nav-link-item">
-							<Link to="/experience">Experience</Link>
+							<a href="#experience">Experience</a>
 						</li>
 						<li className="footer-nav-link-item">
-							<Link to="/projects">Projects</Link>
+							<a href="#projects">Projects</a>
 						</li>
 						<li className="footer-nav-link-item">
-							<Link to="/Involvements">Involvements</Link>
-						</li>
-						<li className="footer-nav-link-item">
-							<Link to="/contact">Contact</Link>
+							<a href="#contact">Contact</a>
 						</li>
 					</ul>
 				</div>

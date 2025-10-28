@@ -1,11 +1,11 @@
 :root {
-	/* ------- colors ------- */
-	--primary-color: #27272a;
-	--secondary-color: #65656d;
-	--tertiary-color: #acacb4;
-	--quaternary-color: #e4e4e7;
-	--link-color: #14b8a6;
-	/* ---------------------- */
+	/* ------- colors (dark theme) ------- */
+	--primary-color: #e6edf3; /* main titles */
+	--secondary-color: #c9d1d9; /* body text */
+	--tertiary-color: #102a43; /* dividers/borders */
+	--quaternary-color: #0b1e33; /* background accents */
+	--link-color: #58a6ff; /* links on dark */
+	/* ---------------------------------- */
 
 	/* ------- fonts ------- */
 	--primary-font: "Heebo", sans-serif;

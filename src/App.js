@@ -3,12 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import ReactGA from "react-ga4";
 
 import Homepage from "./pages/homepage";
-import About from "./pages/experience";
-import Projects from "./pages/projects";
-import Articles from "./pages/articles";
-import ReadArticle from "./pages/readArticle";
-import Contact from "./pages/contact";
-import Notfound from "./pages/404";
+// Single-page app: other pages are now consolidated into Homepage
 
 import { TRACKING_ID } from "./data/tracking";
 import "./app.css";
@@ -24,14 +19,6 @@ function App() {
 		<div className="App">
 			<Routes>
 				<Route path="/" element={<Homepage />} />
-				<Route path="/experience" element={<About />} />
-				<Route path="/projects" element={<Projects />} />
-				<Route path="/involvements" element={<Articles />} />
-				<Route path="/involvement/:slug" element={<ReadArticle />} />
-				{/* <Route path="/blog" element={<Articles />} /> */}
-				{/* <Route path="/blog/:slug" element={<ReadArticle />} /> */}
-				<Route path="/contact" element={<Contact />} />
-				<Route path="*" element={<Notfound />} />
 			</Routes>
 		</div>
 	);
