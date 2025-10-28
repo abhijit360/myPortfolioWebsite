@@ -11,7 +11,7 @@ const INFO = {
 	socials: {
 		twitter: "https://twitter.com/",
 		github: "https://github.com/abhijit360",
-		linkedin: "https://www.linkedin.com/in/abhijit-kamath-227b63245/",
+		linkedin: "https://www.linkedin.com/in/abhijit-kamath",
 		instagram: "https://instagram.com/",
 		stackoverflow: "https://stackoverflow.com/",
 		facebook: "https://facebook.com/",
