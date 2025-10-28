@@ -14,7 +14,7 @@ import { ContactMeForm } from "../components/common/form";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import Project from "../components/projects/project";
+// Project tiles will be rendered inline in this page
 // Single-page: use anchor links instead of router Links
 
 import "./styles/homepage.css";
@@ -92,7 +92,9 @@ const Homepage = () => {
 								</div>
 
 								<div className="subtitle homepage-subtitle">
-									{INFO.homepage.description}
+									{INFO.homepage.description.map((description, index) => (
+										<p key={index}>{description}</p>
+									))}
 								</div>
 							</div>
 
@@ -100,7 +102,7 @@ const Homepage = () => {
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
 										<img
-											src="AbhijitProfilePicture.jpg"
+											src="abhi.png"
 											alt="about"
 											className="homepage-image"
 										/>
@@ -141,45 +143,8 @@ const Homepage = () => {
 								/>
 							</a>
 						</div>
-
-						<div className="homepage-projects" id="projects">
-							<h1>Projects</h1>
-							<div className="homepage-projects-container">
-								{INFO.projects
-									.slice(0, 3)
-									.map((project, index) => (
-										<div
-											className="all-projects-project"
-											key={index}
-										>
-											<Project
-												logo={project.logo}
-												title={project.title}
-												description={
-													project.description
-												}
-												linkText={project.linkText}
-												link={project.link}
-												date={project.date}
-												homePage={true}
-											/>
-										</div>
-									))}
-							</div>
-							<a className="link-one" href="#projects">
-								<FontAwesomeIcon
-									style={{ fontSize: "10px" }}
-									icon={faChevronRight}
-								/>{" "}
-								View more Projects
-							</a>
-						</div>
-
 						{/* Experience Section anchor */}
 						<h1 id="experience">Experience</h1>
-						<div className="subtitle homepage-subtitle">
-							{INFO.about.description}
-						</div>
 						<div className="experience-grid">
 							{INFO.workExperience.map((experience, index) => (
 								<div className="experience-tile" key={index}>
@@ -207,25 +172,56 @@ const Homepage = () => {
 													))}
 											</div>
 										)}
-									<ul className="desc-list">
-										{experience.description.map(
-											(item, j) => (
-												<li key={j}>{item}</li>
-											)
-										)}
-									</ul>
+									<p>{experience.description}</p>
 								</div>
 							))}
 						</div>
-
+						{/* Projects Section anchor */}
+						<h1 id="projects">Projects</h1>
+						<div className="projects-grid">
+							{INFO.projects.map((project, index) => (
+								<div key={index} className="project-tile">
+									<div className="project-header">
+										<div className="project-title">
+											{project.title}
+										</div>
+										{project.date && (
+											<div className="project-date">
+												{project.date}
+											</div>
+										)}
+									</div>
+									<div className="project-summary">
+										{project.description}
+									</div>
+									{project.link && (
+										<div className="project-actions">
+											<a
+												href={project.link}
+												target="_blank"
+												rel="noreferrer"
+											>
+												{project.linkText ||
+													"View Project"}
+											</a>
+										</div>
+									)}
+								</div>
+							))}
+						</div>
 						{/* Contact Section anchor */}
 						<h1 id="contact">Contact</h1>
-						<div className="subtitle homepage-subtitle">
-							You can reach me at &nbsp;
-							<a href={`mailto:${INFO.main.email}`}>
-								{INFO.main.email}
-							</a>
-						</div>
+						<p>
+							I am always looking for new opportunities and
+							collaborations. Feel free to reach out to me!
+						</p>
+						You can reach me at &nbsp;
+						<a
+							style={{ color: "white" }}
+							href={`mailto:${INFO.main.email}`}
+						>
+							{INFO.main.email}
+						</a>
 						<div className="about-socials">
 							<Socials />
 						</div>
