@@ -217,9 +217,6 @@ const Homepage = () => {
 								</div>
 							))}
 						</div>
-						<div className="about-socials">
-							<Socials />
-						</div>
 
 						{/* Contact Section anchor */}
 						<h1 id="contact">Contact</h1>
@@ -228,10 +225,9 @@ const Homepage = () => {
 							<a href={`mailto:${INFO.main.email}`}>
 								{INFO.main.email}
 							</a>
-							.
 						</div>
-						<div className="subtitle homepage-subtitle">
-							<ContactMeForm />
+						<div className="about-socials">
+							<Socials />
 						</div>
 						<div className="page-footer">
 							<Footer />

@@ -1,54 +1,30 @@
 import React from "react";
+import { useState } from "react";
 // Using anchor links for single-page navigation
 
 import "./styles/navBar.css";
 
 const NavBar = (props) => {
-	const { active } = props;
-
+	const sections = ["home", "experience", "projects", "contact"]
+	const [currentSelectionIndex, setCurrentSelectionIndex] = useState(0)
 	return (
 		<React.Fragment>
 			<div className="nav-container">
 				<nav className="navbar">
 					<div className="nav-background">
 						<ul className="nav-list">
-							<li
-								className={
-									active === "home"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
-								<a href="#home">Home</a>
-							</li>
-							<li
-								className={
-									active === "about"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
-								<a href="#experience">Experience</a>
-							</li>
-							<li
-								className={
-									active === "projects"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
-								<a href="#projects">Projects</a>
-							</li>
-
-							<li
-								className={
-									active === "contact"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
-								<a href="#contact">Contact</a>
-							</li>
+							{sections.map((section, index) => (
+								<li
+									className={
+										index === currentSelectionIndex
+											? "nav-item active"
+											: "nav-item"
+									}
+									onClick={() => setCurrentSelectionIndex(index)}
+								>
+									<a href={`#${section}`}>{section}</a>
+								</li>
+							))}		
 						</ul>
 					</div>
 				</nav>
