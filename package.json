@@ -15,7 +15,9 @@
 		"react-scripts": "5.0.1"
 	},
 	"scripts": {
+		"prestart": "node scripts/stamp-last-edit.js",
 		"start": "react-scripts start",
+		"prebuild": "node scripts/stamp-last-edit.js",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"

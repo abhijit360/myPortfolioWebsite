@@ -16,6 +16,22 @@
 			rel="stylesheet"
 		/>
 		<title>Abhijit Kamath</title>
+		<script>
+			// Pick the theme before first paint so there is no flash.
+			(function () {
+				var t;
+				try {
+					t = localStorage.getItem("theme");
+				} catch (e) {}
+				if (t !== "light" && t !== "dark") {
+					t = window.matchMedia("(prefers-color-scheme: light)")
+						.matches
+						? "light"
+						: "dark";
+				}
+				document.documentElement.dataset.theme = t;
+			})();
+		</script>
 	</head>
 	<body>
 		<noscript>You need to enable JavaScript to run this app.</noscript>
