@@ -7,7 +7,7 @@ const INFO = {
 	intro: ["Software Engineer at Meta.", "Sunnyvale, CA."],
 
 	about:
-		"I started coding to make small games and websites. Now, I work on things that are a little more complex. I am currently learning all about AI and inference. When I am not learning, I am working out, cooking, reading or just hanging out with my brother or girlfriend :)",
+		"I started coding to make small games and websites. Now, I work on things that are a little more complex. I am currently learning all about AI and inference. When I am not learning, I am working out, cooking, reading or just hanging out with the people that mean the world to me :)",
 
 	experience: [
 		{
